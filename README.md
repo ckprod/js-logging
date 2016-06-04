@@ -1,7 +1,8 @@
 #js-logging
 
-[![NPM version](http://img.shields.io/npm/v/tracer.svg)](https://www.npmjs.org/package/tracer)
-[![Build Status](https://secure.travis-ci.org/baryon/tracer.png)](http://travis-ci.org/baryon/tracer)
+[![NPM version](http://img.shields.io/npm/v/js-logging.svg)](https://www.npmjs.org/package/js-logging)
+![](https://img.shields.io/badge/dependencies-none-brightgreen.svg?style=plastic)
+[![Build Status](https://travis-ci.org/irhc/detect-decimal-delimiter.png?branch=master)](https://travis-ci.org/irhc/detect-decimal-delimiter)
 
 A powerful, feature rich and customizable logging library for node.js and any browser with a console. 
 
@@ -10,13 +11,13 @@ compliant with RFC 5424.
 
 ###Examples
 
-See [here](http://irhc.github.io/table-drag-sort-resize) for some js-logging outputs in the console of your browser. It should be similar to
+See [here](http://irhc.github.io/js-logging) for some js-logging outputs in the console of your browser. It should be similar to
 
-![](https://raw.github.com/irhc/log/gh-pages/browser.png)
+![](https://raw.github.com/irhc/js-logging/browser.png)
 
 On the server side (e.g. nodejs) an example looks like this
 
-![](https://raw.github.com/irhc/log/gh-pages/console.png)
+![](https://raw.github.com/irhc/js-logging/console.png)
 
 
 ###Node.js Example
