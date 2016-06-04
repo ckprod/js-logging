@@ -9,7 +9,7 @@ A powerful, feature rich and customizable logging library for node.js and any br
 This library is based on baryon's node.js logging library [tracer](https://github.com/baryon/tracer). It has no dependencies, predefined settings and its default log levels are
 compliant with RFC 5424.
 
-###Examples
+###Example Logs
 
 See [here](http://irhc.github.io/js-logging) for some js-logging outputs in the console of your browser. It should be similar to
 
@@ -35,7 +35,7 @@ let Logging = require('js-logging');
 let logger2 = new Logging();
 logger2.debug('Hello World!');
 ```
-Current version should work with Node.js version 4.0 and above.
+Current version should work with Node.js version 6.0 and above.
 
 ###Browser Example
 
