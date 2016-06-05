@@ -11,7 +11,7 @@ compliant with RFC 5424.
 
 ###Example Logs
 
-See [here](http://irhc.github.io/js-logging) for some js-logging outputs in the console of your browser. It should be similar to
+See [here](http://irhc.github.io/js-logging) for some js-logging output in the console of your browser. It should be similar to
 
 ![](https://raw.github.com/irhc/js-logging/master/browser.png)
 

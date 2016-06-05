@@ -217,7 +217,7 @@ describe('set level to max value', function() {
   it('hello world error', function() { assert.ok(logger.error('hello world')==undefined); });
   it('hello world critical', function() { assert.ok(logger.critical('hello world')==undefined); });
 	it('hello world alert', function() { assert.ok(logger.alert('hello world')==undefined); });
-  it('hello world emergency', function() { assert.ok(logger.emergency('hello world')); });
+  it('hello world emergency', function() { assert.ok(logger.emergency('hello world')==undefined); });
 });
 
 describe('loop', function() {
