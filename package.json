@@ -3,7 +3,7 @@
   "description": "A powerful, feature rich and customizable logging library for node.js and any browser.",
   "maintainers": "irhc <irhc@openmailbox.org>",
   "homepage": "https://github.com/irhc/js-logging",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "author": "irhc <irhc@openmailbox.org>",
   "license": "MIT",
   "dependencies": {},

@@ -14,7 +14,6 @@ logger.critical('Hello World!');
 logger.alert('Hello World!');
 logger.emergency('Hello World!');
 
-
 options = {
 	format: [
 		"${timestamp} <${title}> ${message} (in ${file}:${line})", //default format

@@ -312,7 +312,7 @@ function Logging(options) {
                 _level = 0;
             }
         } else if (typeof level === 'number') {
-            _level = Math.min(Math.max(level, 0), options.methods.length - 1);
+            _level = Math.min(Math.max(level, 0), options.methods.length);
         } else {
             _level = 0;
         }

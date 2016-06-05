@@ -3,12 +3,12 @@
 function stress_log(log) {
     var i;
     for (i = 0; i < 100000; ++i) {
-        log.info("Counter Value = %s", i);
+        log.info("Counter Value = " + i);
     }
 }
 
 function test_tracer() {
-    var log = require('./js-logging.umd.js').console({
+    var log = require('../js-logging.umd.js').console({
     	transport : function(data) {}
     });
     
@@ -19,8 +19,8 @@ function test_tracer() {
 
 
 function test_tracer_skip() {
-    var log = require('./js-logging.umd.js').console({
-    	level:"warn",
+    var log = require('../js-logging.umd.js').console({
+    	level:'warning',
     	transport : function(data) {}
     });
     
@@ -32,7 +32,7 @@ function test_tracer_skip() {
 
 function test_tracer_nostack() {
 	//if the format don't include "method|path|line|pos|file", the speed will be up
-    var log = require('./js-logging.umd.js').console({
+    var log = require('../js-logging.umd.js').console({
     	format: "{{timestamp}} <{{title}}> {{message}}",
     	transport : function(data) {}
     });
