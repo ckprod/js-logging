@@ -22,10 +22,11 @@
     "logger",
     "logging",
     "tracer",
-    "console"
+    "console",
+    "browser"
   ],
   "engines": {
-    "node": ">= 4.0"
+    "node": ">= 6.0"
   },
   "repository": {
     "type": "svn",
