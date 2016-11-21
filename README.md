@@ -55,7 +55,7 @@ Color version works with chrome and firefox, at least.
 
 ###Features
 
-- print log messages with timstamp, file name, method name, line number, path or call stack
+- print log messages with timestamp, file name, method name, line number, path or call stack
 - simple color support for node.js
 - individual color support for chrome and firefox
 - customized date/timestamp format and output format
