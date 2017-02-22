@@ -273,7 +273,7 @@ function colorText(color, text) {
         default:
             text = color + text; break;
     }
-    return text + '\x1B[39m';
+    return text + '\x1B[39m' + '\x1b[0m';
 };
 
 function Logging(options) {
