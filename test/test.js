@@ -53,7 +53,7 @@ describe('simple color message', function() {
 		}
 	});
 	var o = logger.error('hello');
-	it('output', function() { assert.deepEqual(o.output, '\x1B[31mhello\x1B[39m'); });
+	it('output', function() { assert.deepEqual(o.output, '\x1B[31mhello\x1B[39m\u001b[0m'); });
 });
 
 describe('custom format', function() {
@@ -63,7 +63,7 @@ describe('custom format', function() {
 		          {
 		        	  warning : "warning:${message}",
 		        	  error : "error:${message}",
-		          }	
+		          }
 		],
 		transport : function(data) {
 			console.log(data.output);
@@ -75,11 +75,11 @@ describe('custom format', function() {
 		let o = logger.debug('hello world 123');
 		assert.equal(o['output'], 'hello world 123');
 	});
-	it('warning:hello world 123', function() { 
+	it('warning:hello world 123', function() {
 		let o = logger.warning('hello world 123');
 		assert.equal(o['output'], 'warning:hello world 123');
 	});
-	it('error:hello world 123', function() { 
+	it('error:hello world 123', function() {
 		let o = logger.error('hello world 123');
 		assert.equal(o['output'], 'error:hello world 123');
 	});
@@ -92,7 +92,7 @@ describe('custom filter', function() {
 		          {
 		        	  warning : "warning:${message}",
 		        	  error : "error:${message}",
-		          }	
+		          }
 		],
 		filters:[
 		  'black',
@@ -107,17 +107,17 @@ describe('custom filter', function() {
 	});
   {
     let o = logger.debug('hello world 123');
-    it('output debug', function() { assert.equal(o['output'], '\x1B[30mhello world 123\x1B[39m'); });
+    it('output debug', function() { assert.equal(o['output'], '\x1B[30mhello world 123\x1B[39m\u001b[0m'); });
     it('level debug', function() { assert.equal(o['level'], 0); });
   }
   {
     let o = logger.warning('hello world 123');
-    it('output warning', function() { assert.equal(o['output'], '\x1B[34mwarning:hello world 123\x1B[39m'); });
+    it('output warning', function() { assert.equal(o['output'], '\x1B[34mwarning:hello world 123\x1B[39m\u001b[0m'); });
     it('level warning', function() { assert.equal(o['level'], 3); });
   }
   {
     let o = logger.error('hello world 123');
-    it('output error', function() { assert.equal(o['output'], '\x1B[31merror:hello world 123\x1B[39m'); });
+    it('output error', function() { assert.equal(o['output'], '\x1B[31merror:hello world 123\x1B[39m\u001b[0m'); });
     it('level error', function() { assert.equal(o['level'], 4); });
   }
 

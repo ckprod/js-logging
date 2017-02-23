@@ -277,9 +277,9 @@
             case 'white':
                 text = '\x1B[37m' + text; break;
             default:
-                return text;
+                text = color + text; break;
         }
-        return text + '\x1B[39m';
+        return text + '\x1B[39m' + '\x1b[0m';
     };
 
     function Logging(options) {
@@ -487,9 +487,9 @@
             pathFormat: '${path}/${filename}${filenameDateFormat}.log',
             lineEnding: '\r\n'
         };
-        
+
         options = unionOptions(defaultFileOptions, options);
-        
+
         function LogFile(date) {
             let template = assembleFilePath(options.pathFormat);
             date = '.' + date;
@@ -510,7 +510,7 @@
         let logFile = null;
 
         function dailyFileTransport(data) {
-            
+
             // check time
             let now = dateFormat(new Date(), options.filenameDateFormat);
             if (logFile && logFile.date != now) {
@@ -529,7 +529,7 @@
         } else {
             options.transport = [dailyFileTransport];
         }
-        
+
         return new Logging(options);
     }
 
