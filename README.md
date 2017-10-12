@@ -265,6 +265,6 @@ This small javascript component uses or is based on other javascript projects an
 - [tracer](https://github.com/baryon/tracer)
 - [dateformat](http://blog.stevenlevithan.com/archives/date-time-format) and the npm package [dateformat-light ](https://www.npmjs.com/package/dateformat-light)
 
-### Licence
+### License
 
 MIT
