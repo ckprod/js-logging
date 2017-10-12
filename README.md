@@ -1,4 +1,4 @@
-#js-logging
+# js-logging
 
 [![NPM version](http://img.shields.io/npm/v/js-logging.svg)](https://www.npmjs.org/package/js-logging)
 ![](https://img.shields.io/badge/dependencies-none-brightgreen.svg)
@@ -9,7 +9,7 @@ A powerful, feature rich and customizable logging library for node.js and any br
 This library is based on baryon's node.js logging library [tracer](https://github.com/baryon/tracer). It has no dependencies, predefined settings and its default log levels are
 compliant with RFC 5424.
 
-###Example Logs
+### Example Logs
 
 See [here](http://irhc.github.io/js-logging) for some js-logging output in the console of your browser. It should be similar to
 
@@ -20,7 +20,7 @@ On the server side (e.g. nodejs) an example looks like this
 ![](https://raw.github.com/irhc/js-logging/master/console.png)
 
 
-###Node.js Example
+### Node.js Example
 
 ```html
 npm install js-logging
@@ -37,7 +37,7 @@ logger2.debug('Hello World!');
 ```
 Current version should work with Node.js version 6.0 and above.
 
-###Browser Example
+### Browser Example
 
 ```javascript
 <script src='js-logging.browser.js'></script>
@@ -53,7 +53,7 @@ Current version should work with Node.js version 6.0 and above.
 ```
 Color version works with chrome and firefox, at least.
 
-###Features
+### Features
 
 - print log messages with timestamp, file name, method name, line number, path or call stack
 - simple color support for node.js
@@ -67,7 +67,7 @@ Color version works with chrome and firefox, at least.
 - production ready with minimal performance overhead
 - es6 module
 
-###Usage node.js
+### Usage node.js
 One can define a new object of the Logging class
 ```javascript
 let Logging = require('js-logging');
@@ -116,7 +116,7 @@ let logger = require('../js-logging.umd.js').dailyFile([options]);
 logger.debug('Hello World!');
 ```
 
-###Usage browser
+### Usage browser
 
 See the browser example above. The default color setting is slightly different from the node.js setting.
 ```javascript
@@ -135,7 +135,7 @@ let conf = {
 ```
 Of course there is no predefined function dailyFile!
 
-###Options
+### Options
 The following options can be set by the use of the Logging class or any predefined function (console, colorConsole, dailyFile)
 ```javascript
 let defaultOptions = {
@@ -193,7 +193,7 @@ let defaultOptions = {
 }
 ```
 
-###Data object
+### Data object
 
 ```javascript
 var data = {
@@ -212,7 +212,7 @@ var data = {
 };
 ```
 
-###Logging level
+### Logging level
 
 One can set the (initial) logging level either as method name or as number (index).
 The initial logging level is responsible for the created transports. No transport is set for logging levels below the initial level.
@@ -246,19 +246,19 @@ logger.setLevel('unknownLevel');
 // is equivalent to logger.setLevel(0);
 ```
 
-###Examples
+### Examples
 
 Take a look at the examples directory for many different examples.
 
-###Production and Development
+### Production and Development
 
 Close the logger at anytime (or set the initial level very high) to get production ready with minimal performance overhead (see the example performance.js).
 
-###Supported browsers
+### Supported browsers
 
 Any browser with a console and at least Chrome and Firefox for simple color support.
 
-###References
+### References
 
 This small javascript component uses or is based on other javascript projects and code snippets:
 
